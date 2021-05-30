@@ -1,0 +1,35 @@
+@media screen {
+          footer {
+                    background-color: $black;
+                    color: $white;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 30px;
+                    margin-top: 138px;
+                    padding: 0 20px 30px 22px;
+                    font-size: 10px;
+                    vertical-align: middle;
+                    .SocialIcon {
+                              width: 2.5rem;
+                              height: 2.5rem;
+                              filter: invert(85%);
+                              margin-top: 10px;
+                              margin-right: 2px;
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          footer {
+                    height: 50px;
+                    padding: 0 20px 30px 25px;
+                    font-size: 14px;
+                    .SocialIcon {
+                              width: 3.2rem;
+                              height: 3.2rem;
+                              margin-top: 15px;
+                              margin-right: 5px;
+                    }
+          }
+}

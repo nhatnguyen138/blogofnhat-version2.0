@@ -1,0 +1,94 @@
+@media screen {
+          header {
+                    width: calc(100vw + 8px);
+                    margin-top: -8px;
+                    margin-left: -8px;
+                    background-color: $color3;
+          }
+          #HeaderLogo {
+                    width: 15rem;
+                    height: auto;
+                    margin-top: 10px;
+          }
+          #MenuIcon {
+                    position: absolute;
+                    top: 17px;
+                    right: 20px;
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    cursor: pointer;
+          }
+          #DisplayMenuCheck {
+                    display: none;
+          }
+          nav {
+                    background-color: $color3;
+                    z-index: 100;
+                    .NavBtn {
+                              font-family: $font1;
+                              color: $black;
+                              font-weight: bold;
+                    }
+                    .NavBtn:hover, .Selected {
+                              background-color: $color2;
+                              color: $white;
+                              transition: 0.25s;
+                    }
+          }
+}
+
+@media only screen and (max-width: 821px) {
+          #DisplayMenuCheck:checked ~ nav{
+                    left: 0px;
+                    transition: 0.4s;
+          }
+          #DisplayMenuCheck:not(checked) ~ nav {
+                    left: -120vw;
+                    transition: 0.4s;
+          }
+          nav {
+                    position: absolute;
+                    width: calc(100vw + 8px);
+                    height: auto;
+                    left: -120vw;
+                    opacity: 0.9;
+                    .NavBtn {
+                              width: 100vw;
+                              height: 1.7rem;
+                              padding: 15px 20px;
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #HeaderLogo {
+                    width: 18rem;
+                    height: auto;
+          }
+          #MenuIcon {
+                    display: none;
+          }
+          nav {
+                    width: calc(100vw-250px);
+                    height: 7rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    .NavBtn {
+                              width: 110px;
+                              height: 4.5rem;
+                              margin-top: -8px;
+                              text-align: center;
+                              padding-top: 50px;
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          header {
+                    width: 1025px;
+          }
+          nav {
+                    width: 784px;
+          }
+}

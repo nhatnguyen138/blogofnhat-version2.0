@@ -1,0 +1,23 @@
+@import "modules-default";
+@import "blogposts-slideshow";
+@import "blogposts-blogposts";
+
+@media screen {
+          #BlogPostsOverview {
+                    padding: 20px;
+                    #Title {
+                              font-size: 8vw;
+                              color: $color4;
+                              margin-left: 5px;
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #BlogPostsOverview {
+                    #Title {
+                              font-size: 65.76px;
+                              padding-left: 10px;
+                    }
+          }
+}

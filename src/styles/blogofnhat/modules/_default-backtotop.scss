@@ -1,0 +1,53 @@
+@media screen {
+          #BackToTop {
+                    display: none;
+                    position: fixed;
+                    width: 100vw;
+                    width: calc(100vw + 8px);
+                    margin-top: -8px;
+                    margin-left: -8px;
+                    z-index: 99;
+                    #Logo {
+                              width: 15rem;
+                              height: auto;
+                              margin-top: 10px;
+                    }
+                    background-color: $color3;
+                    z-index: 99;
+                    #BackToTopBtn {
+                              position: absolute;
+                              top: 0;
+                              right: 0;
+                              width: 8rem;
+                              height: 3.6rem;
+                              font-family: $font1;
+                              font-weight: bold;
+                              font-size: 14px;
+                              color: $black;
+                              text-align: center;
+                              padding-top: 2.7rem;
+                              cursor: pointer;
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #BackToTop {
+                    #Logo {
+                              width: 18rem;
+                              height: auto;
+                              margin-top: 10px;
+                    }
+                    #BackToTopBtn {
+                              width: 12rem;
+                              font-size: 1rem;
+                              padding-top: 2.8rem;
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          #BackToTop {
+                    width: 1042px;
+          }
+}

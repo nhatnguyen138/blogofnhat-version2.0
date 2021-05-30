@@ -1,0 +1,96 @@
+@media screen {
+          #Widgets {
+                    #BackToSection {
+                              display: none;
+                              background-color: $black;
+                              border-radius: 5px;
+                              margin: 20px 100px auto 100px;
+                              padding: 15px;
+                              font-family: $font1;
+                              font-size: 3vw;
+                              color: $color4;
+                              text-align: center;
+                              a {
+                                        text-decoration: none;   
+                              }
+                              &:hover {
+                                        color: $white;
+                                        transition: 0.4s;
+                              }
+                              &:not(hover) {
+                                        color: $color4;
+                                        transition: 0.4s;
+                              }
+                    }
+                    #AboutMeWidget {
+                              padding: 50px;
+                              #Title {
+                                        font-size: 5vw;
+                                        margin-top: 0;
+                              }
+                              #Description {
+                                        font-size: 2.5vw;
+                              }
+                              #Button {
+                                        display: inline-block;
+                                        background-color: $black;
+                                        border-radius: 5px;
+                                        margin-top: 20px;
+                                        padding: 10px;
+                                        font-family: $font1;
+                                        font-size: 2.5vw;
+                                        color: $color4;
+                                        a {
+                                                  text-decoration: none;      
+                                        }
+                                        &:hover {
+                                                  color: $white;
+                                                  transition: 0.4s;
+                                        }
+                                        &:not(hover) {
+                                                  color: $color4;
+                                                  transition: 0.4s;
+                                        }
+                              }
+                              #Socials {
+                                        .SocialIcon {
+                                                  display: none;
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #Widgets {
+                    #BackToSection {
+                              margin: 30px 9px auto 9px;
+                              font-size: 16px;
+                              text-align: left;
+                    }
+                    #AboutMeWidget {
+                              margin-top: 10px;
+                              padding: 10px;
+                              #Title {
+                                        font-size: 30px;
+                              }
+                              #Description {
+                                        font-size: 15px;
+                              }
+                              #Button {
+                                        font-size: 15px;
+                              }
+                              #Socials {
+                                        display: flex;
+                                        flex-direction: row;
+                                        .SocialIcon {
+                                                  display: block;
+                                                  width: 2.5rem;
+                                                  height: 2.5rem;
+                                                  margin-top: 15px;
+                                        }
+                              }
+                              
+                    }
+          }
+}

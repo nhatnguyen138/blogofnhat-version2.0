@@ -1,0 +1,37 @@
+{
+          "total": 4,
+          "project": [
+                    {
+                              "id": "just-me-holding-cups",
+                              "title": "Just me holding cups..",
+                              "published_date": "2017-12-15",
+                              "excerpt": "The collection of me holding cups by the time I went back to Hanoi late 2017. I’d been travelling all around the city just to take a sip of those beverages (mostly coffee/bacxiu) while looking at the view and enjoying the life. My life.",
+                              "total": 5,
+                              "pictures": ["just-me-holding-cups-1.jpg","just-me-holding-cups-2.jpg","just-me-holding-cups-3.jpg","just-me-holding-cups-4.jpg","just-me-holding-cups-5.jpg"]
+                    },
+                    {
+                              "id": "a-coffee-day-with-hieu-shade",
+                              "title": "A coffee day with Hieu Shade",
+                              "published_date": "2018-01-28",
+                              "excerpt": "Hieu Shade, a friend of mine that plays guitar. I really liked hanging out with the guy, having some bacxiu and listening to his classical music. These were taken on 20 Jan 2018 @ Trinh cafe.",
+                              "total": 5,
+                              "pictures": ["a-coffee-day-with-hieu-shade-1.jpg","a-coffee-day-with-hieu-shade-2.jpg","a-coffee-day-with-hieu-shade-3.jpg","a-coffee-day-with-hieu-shade-4.jpg","a-coffee-day-with-hieu-shade-5.jpg"]
+                    },
+                    {
+                              "id": "canberra-april-2018",
+                              "title": "Canberra (April 2018)",
+                              "published_date": "2018-04-17",
+                              "excerpt": "Some of the photos that I took while travelling to Canberra in April 2018. Quiet and peaceful, oddly that was what I liked about Canberra, because it reminded me of my hometown.",
+                              "total": 8,
+                              "pictures": ["canberra-april-2018-1.jpg","canberra-april-2018-2.jpg","canberra-april-2018-3.jpg","canberra-april-2018-4.jpg","canberra-april-2018-5.jpg","canberra-april-2018-6.jpg","canberra-april-2018-7.jpg","canberra-april-2018-8.jpg"]
+                    },
+                    {
+                              "id": "melbourne-and-st-kilda-july-2019-vacay",
+                              "title": "Melbourne and St Kilda: July 2019 vacay",
+                              "published_date": "2019-07-06",
+                              "excerpt": "Few photos taken from my trip to Melbourne in July 2019. I remembered this was when I tried my newly-bought 50mm f1.8 lens. The weather was nice and the lens made these photos bright as well. Taken by: Canon 550D DSLR.",
+                              "total": 9,
+                              "pictures": ["melbourne-and-st-kilda-july-2019-vacay-1.jpg","melbourne-and-st-kilda-july-2019-vacay-2.jpg","melbourne-and-st-kilda-july-2019-vacay-3.jpg","melbourne-and-st-kilda-july-2019-vacay-4.jpg","melbourne-and-st-kilda-july-2019-vacay-5.jpg","melbourne-and-st-kilda-july-2019-vacay-6.jpg","melbourne-and-st-kilda-july-2019-vacay-7.jpg","melbourne-and-st-kilda-july-2019-vacay-8.jpg","melbourne-and-st-kilda-july-2019-vacay-9.jpg"]
+                    }
+          ]
+}

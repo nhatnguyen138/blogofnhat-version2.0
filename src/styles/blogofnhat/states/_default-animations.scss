@@ -1,0 +1,19 @@
+@import "animations-homepage";
+
+@keyframes BackToTop-Appear {
+          from {
+                    transform: translateY(-200px);
+          }
+          to {
+                    transform: translateY(0);
+          }
+}
+
+@-webkit-keyframes BackToTop-Appear {
+          from {
+                    transform: translateY(-200px);
+          }
+          to {
+                    transform: translateY(0);
+          }
+}

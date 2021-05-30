@@ -1,0 +1,126 @@
+@import "modules-default";
+@import "gallery-image-display";
+
+@media screen {
+          #SectionTitle {
+                    font-size: 8vw;
+                    color: $color4;
+                    margin-left: 5px;
+          }
+          #GalleryPosts {
+                    .GalleryPost {
+                              margin-bottom: 50px;
+                              .PostDetails {
+                                        .Title {
+                                                  font-weight: bold;
+                                                  font-size: 3.7vw;
+                                                  color: $color4;
+                                                  padding: 20px 0 20px 10px;
+                                        }
+                                        .PublishedDate {
+                                                  font-family: $font4;
+                                                  font-size: 2.2vw;
+                                                  color: $color3;
+                                                  margin-top: -15px;
+                                                  margin-bottom: 20px;
+                                                  padding-left: 10px;
+                                        }
+                                        .Description {
+                                                  font-family: $font1;
+                                                  font-size: 2.6vw;
+                                                  margin-bottom: 10px;
+                                                  padding: 10px;
+                                        }
+                              }
+                              .Images {
+                                        display: grid;
+                                        grid-template-areas:
+                                                  "img1 img1"
+                                                  "img2 img3"
+                                                  "img4 img5";
+                                        .img1 {
+                                                  grid-area: img1;
+                                                  img {
+                                                            width: 100vw;
+                                                  }
+                                        }
+                                        .img2, .img3, .img4, .img5 {
+                                                  img {
+                                                            width: 48.5vw;
+                                                            margin: 1px 0.5vw 1px 0.5vw;
+                                                  }  
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #SectionTitle {
+                    font-size: 65.76px;
+                    padding-left: 10px;
+          }
+          #GalleryPosts {
+                    .GalleryPost {
+                              .PostDetails {
+                                        .Title {
+                                                  font-size: 24.476px;
+                                        }
+                                        .PublishedDate {
+                                                  font-size: 15px;
+                                        }
+                                        .Description {
+                                                  font-size: 17.861px;
+                                        }
+                              }
+                              .Images {
+                                        display: grid;
+                                        grid-template-columns: 2fr 1fr 1fr;
+                                        grid-template-areas:
+                                                  "img1 img2 img3"
+                                                  "img1 img4 img5";
+                                        .img1 {
+                                                  grid-area: img1;
+                                                  margin-left: 10px;
+                                                  img {
+                                                            width: 35vw;
+                                                  }
+                                        }
+                                        .img2, .img3, .img4, .img5 {
+                                                  margin-left: -5px;
+                                                  img {
+                                                            width: 17.25vw;
+                                                            margin: 0;
+                                                  }  
+                                        }
+                                        .img3, .img5 {
+                                                  margin-left: -10px;
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          #GalleryPosts {
+                    .GalleryPost {
+                              .Images {
+                                        .img1 {
+                                                  img {
+                                                            width: 358.75px;
+                                                  }
+                                        }
+                                        .img2, .img3, .img4, .img5 {
+                                                  margin-left: -10px;
+                                                  img {
+                                                            width: 176.8125px;
+                                                            margin: 0;
+                                                  }  
+                                        }
+                                        .img3, .img5 {
+                                                  margin-left: -18px;
+                                        }
+                              }
+                    }
+          } 
+}

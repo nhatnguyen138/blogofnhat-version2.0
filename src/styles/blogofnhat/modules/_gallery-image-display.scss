@@ -1,0 +1,96 @@
+@media screen {
+          #ImageDisplayer {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 300;
+                    margin: auto;
+                    background-color: $black;
+                    width: 100vw;
+                    height: 100vh;
+                    #CloseDisplayer {
+                              position: absolute;
+                              top: 20px;
+                              right: 30px;
+                              background-color: #303030;
+                              width: 50px;
+                              height: 50px;
+                              line-height: 50px;
+                              text-align: center;
+                              border-radius: 50%;
+                              z-index: 300;
+                              color: $white;
+                              &:hover {
+                                        background-color: $color1;
+                                        transition: 0.25s;
+                              }
+                              &:not(hover) {
+                                        background-color: #303030;
+                                        transition: 0.2s;
+                              }
+                    }
+                    #ImageDisplayed {
+                              position: absolute;
+                              width: 90vw;
+                              top: 53%;
+                              left: 50%;
+                              margin-top: -33.75vw;
+                              margin-left: -45vw;
+                    }
+                    #PreviousImage {
+                              position: absolute;
+                              background-color: $black;
+                              top: 0;
+                              left: 0;
+                              width: 50px;
+                              height: 100vh;
+                              line-height: 100vh;
+                              text-align: right;
+                              padding-right: 50px;
+                              color: $white;
+                              &:hover {
+                                        opacity: 0.7;
+                                        transition: 0.25s;
+                              }
+                              &:not(hover) {
+                                        opacity: 0;
+                                        transition: 0.2s;
+                              }
+                    }
+                    #NextImage {
+                              position: absolute;
+                              background-color: $black;
+                              top: 0;
+                              right: 0;
+                              width: 52px;
+                              height: 100vh;
+                              line-height: 100vh;
+                              padding-left: 50px;
+                              color: $white;
+                              &:hover {
+                                        opacity: 0.7;
+                                        transition: 0.25s;
+                              }
+                              &:not(hover) {
+                                        opacity: 0;
+                                        transition: 0.2s;
+                              }
+                    }
+                    #ImageNumber {
+                              position: absolute;
+                              bottom: 20px;
+                              width: 100vw;
+                              text-align: center;
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          #ImageDisplayer {
+                    #ImageDisplayed {
+                              width: 922.5px;
+                              margin-top: -345.9375px;
+                              margin-left: -461.25px;
+                    }
+          }
+}

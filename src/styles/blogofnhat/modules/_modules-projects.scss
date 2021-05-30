@@ -1,0 +1,119 @@
+@import "modules-default";
+
+@media screen {
+          #ProjectsOverview {
+                    border-bottom: 3px solid $white;
+                    padding: 20px;
+                    margin-bottom: 50px;
+                    #Title {
+                              font-size: 8vw;
+                              color: $color4;
+                              margin-left: 5px;
+                    }
+                    #Description {
+                              font-size: 2.7vw;
+                              color: $white;
+                              margin-top: -15px;
+                              margin-left: 10px;
+                    }
+                    img {
+                              width: 70vw;
+                              object-fit: cover;
+                              display: block;
+                              margin: 30px auto 50px auto;
+                              box-shadow: 6px 6px 15px $color2;
+                    }
+          }
+          #ProjectsPosts {
+                    margin: 50px auto 50px auto;
+                    .ProjectPost {
+                              margin-bottom: 50px;
+                              img {
+                                        width: 90vw;
+                                        display: block;
+                                        margin: auto;
+                                        border: 2px solid $white;
+                                        border-radius: 50px 0 50px 0;
+                                        box-shadow: 6px 6px 15px $color2;
+                              }
+                              .PostDetails {
+                                        position: absolute;
+                                        display: inline-block;
+                                        background: linear-gradient(to left, $color2, 70%, $color1);
+                                        width: 75vw;
+                                        padding: 15px;
+                                        margin-top: -24vw;
+                                        margin-left: 5px;
+                                        border-top: solid 2px $white;
+                                        border-right: solid 2px $white;
+                                        cursor: pointer;
+                                        .Title {
+                                                  font-size: 3.7vw;
+                                                  color: $color4;
+                                        }
+                                        .Description {
+                                                  font-size: 2.7vw;
+                                                  font-style: italic;
+                                                  color: $white;
+                                                  margin-top: 5px;
+                                        }
+                                        &:hover .Title {
+                                                  color: $white;
+                                                  transition: 0.4s;
+                                        }
+                                        &:not(hover) .Title {
+                                                  color: $color4;
+                                                  transition: 0.4s;
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #ProjectsOverview {
+                    display: grid;
+                    grid-template-areas:
+                              "title title"
+                              "description image";
+                    #Title {
+                              grid-area: title;
+                              font-size: 65.76px;
+                              padding-left: 10px;
+                    }
+                    #Description {
+                              grid-area: description;
+                              font-size: 22.194px;
+                              padding: 10px;
+                    }
+                    img {
+                              grid-area: image;
+                              width: 40vw;
+                              max-width: 400px;
+                              margin: 0 auto 50px auto;
+                    }
+          }
+          #ProjectsPosts {
+                    margin: 30px auto 30px auto;
+                    .ProjectPost {
+                              margin-bottom: 50px;
+                              img {
+                                        width: calc(67.5vw - 20px);
+                                        max-width: 650px;
+                              }
+                              .PostDetails {
+                                        width: 56.25vw;
+                                        max-width: 558.33px;
+                                        padding: 15px;
+                                        margin-top: -150px; 
+                                        margin-left: -20px;
+                                        .Title {
+                                                  font-size: 24.476px;
+                                        }
+                                        .Description {
+                                                  font-size: 17.861px;
+                                        }
+                              }
+                    }
+          }
+}

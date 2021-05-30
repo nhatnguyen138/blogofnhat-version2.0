@@ -1,0 +1,121 @@
+@media screen {
+          #BlogPosts {
+                    border-left: 13px solid $color5;
+                    position: relative;
+                    margin-left: 30px;
+                    .BlogPost {
+                              position: relative;
+                              margin: auto -30px 50px -42px;
+                              .Category {
+                                        position: relative;
+                                        width: 260px;
+                                        left: 10px;
+                                        margin-top: 30px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        .CategoryBtn {
+                                                  display: inline-block;
+                                                  width: 3.2rem;
+                                                  height: 3rem;
+                                                  background-color: $color5;
+                                                  border: 1px solid $color3;
+                                                  border-radius: 50%;
+                                                  z-index: 2;
+                                                  .CategoryImage {
+                                                            display: block;
+                                                            margin: 5px auto 0 auto;
+                                                            width: 2.2rem;
+                                                            height: 2.2rem;
+                                                            filter: invert(90%);
+                                                  }
+                                        }
+                                        .CategoryName {
+                                                  background-color: $color5;
+                                                  color: $color4;
+                                                  border-radius: 0 30px 30px 0;
+                                                  margin: 7px 0 10px -20px;
+                                                  padding: 7px 17px 7px 25px;
+                                                  z-index: 1;
+                                        }
+                                        &:hover .CategoryName {
+                                                  color: $white;
+                                                  transition: 0.4s;
+                                        }
+                                        &:not(hover) .CategoryName {
+                                                  color: $color3;
+                                                  transition: 0.4s;
+                                        }
+                              }
+                              .BlogPostImage {
+                                        width: calc(100vw - 100px);
+                                        height: 15vw;
+                                        object-fit: cover;
+                                        display: block;
+                                        margin: 15px 30px auto 70px;
+                              }
+                              .BlogPostDetails {
+                                        margin-left: 70px;
+                                        .Title {
+                                                  font-weight: bold;
+                                                  font-size: 3.7vw;
+                                                  color: $color4;
+                                                  margin-left: -10px;
+                                                  margin-right: 60px;
+                                                  padding: 20px 0 20px 10px;
+                                                  &:hover {
+                                                            color: $white;
+                                                            transition: 0.4s;
+                                                  }
+                                                  &:not(hover) {
+                                                            color: $color4;
+                                                            transition: 0.4s;
+                                                  }
+                                        }
+                                        .Date {
+                                                  font-family: $font4;
+                                                  font-size: 2.2vw;
+                                                  color: $color3;
+                                                  margin-top: -15px;
+                                                  margin-bottom: 20px;
+                                        }
+                                        .Excerpt {
+                                                  font-family: $font1;
+                                                  font-size: 2.6vw;
+                                                  margin-right: 60px;
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #BlogPosts {
+                    .BlogPost {
+                              .BlogPostImage {
+                                        width: calc(75vw - 100px);
+                                        height: 92.475px;
+                              }
+                              .BlogPostDetails {
+                                        .Title {
+                                                  font-size: 24.476px;
+                                        }
+                                        .Date {
+                                                  font-size: 15px;
+                                        }
+                                        .Excerpt {
+                                                  font-size: 17.861px;
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          #BlogPosts {
+                    .BlogPost {
+                              .BlogPostImage {
+                                        width: 668.75px;
+                              }
+                    }
+          }
+}

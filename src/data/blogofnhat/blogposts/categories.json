@@ -1,0 +1,27 @@
+{
+          "total":3,
+          "category": [
+                    {
+                              "id": "soliloquy",
+                              "name": "Soliloquy",
+                              "description": "Sometimes being alone is great. I wrote these posts talking about my life and enjoyment while being a lone wolf...",
+                              "count": 2,
+                              "posts": [3,4]
+                    },
+                    {
+                              "id": "audacious-opinions",
+                              "name": "Audacious Opinions",
+                              "description": "This is where I discuss about things which might or might not be controversal or political rather than the usual stuff.",
+                              "count": 4,
+                              "posts": [5,6,7,10]
+                    },
+                    {
+                              "id": "short-stories",
+                              "name": "Short Stories",
+                              "description": "They are stories, aaaand they are short. That's about it.",
+                              "count": 4,
+                              "posts": [1,2,8,9]
+                    }
+                    
+          ]
+}

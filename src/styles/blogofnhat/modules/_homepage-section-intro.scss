@@ -1,0 +1,70 @@
+@media screen {
+          .SectionIntro {
+                    height: 35vw;
+                    display: grid;
+                    grid-template-columns: 3fr 1fr;
+                    grid-template-areas:
+                              "text image";
+                    margin-top: 20px;
+                    .Text {
+                              grid-area: text;
+                              background: linear-gradient(to left, $color2, 85%, $color1);
+                              padding: 20px;
+                              .Title {
+                                        font-size: 6vw;
+                                        color: $color4;
+                                        margin-top: 0;
+                                        padding-left: 10px;
+                              }
+                              .Description {
+                                        font-size: 2.7vw;
+                                        color: $white;
+                                        margin-top: -15px;
+                                        padding-left: 15px;
+                              }
+                    }
+                    img {
+                              grid-area: image;
+                              width: 25vw;
+                              height: 35vw;
+                              object-fit: cover;
+                              border-radius: 0 0 50px 0;
+                              filter: brightness(80%);
+                    }
+                    &:hover {
+                              transform: scale(1.05);
+                              img {
+                                        filter: brightness(100%);
+                              }
+                              transition: 0.3s;
+                    }
+                    &:not(hover) {
+                              transform: scale(1);
+                              img {
+                                        filter: brightness(80%);
+                              }
+                              transition: 0.2s;
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          .SectionIntro {
+                    height: 287.7px;
+                    .Text {
+                              position: relative;
+                              margin-left: 30px;
+                              .Title {
+                                        font-size: 49.32px;
+                              }
+                              .Description {
+                                        width: 493.2px;
+                                        font-size: 22.194px;
+                              }
+                    }
+                    img {
+                              width: 205.5px;
+                              height: 287.7px;
+                    }
+          }
+}

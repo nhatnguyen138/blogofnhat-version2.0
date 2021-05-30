@@ -1,0 +1,117 @@
+@media screen {
+          #BlogPostsSlideShow {
+                    max-width: 1025px;
+                    display: block;
+                    margin: auto auto 100px auto;
+                    .Slide {
+                              display: none;
+                              width: 88vw;
+                              overflow: hidden;
+                              margin: auto;
+                              border-radius: 5px;
+                              box-shadow: 6px 6px 15px $color2;
+                              cursor: pointer;
+                              &:hover .SlideImage {
+                                        filter: grayscale(0%) brightness(110%);
+                                        transform: scale(1.1);
+                                        transition: 0.4s;
+                              }
+                              &:not(hover) .SlideImage {
+                                        filter: grayscale(90%) brightness(70%);
+                                        transform: scale(1);
+                                        transition: 0.2s;
+                              }
+                    }
+                    .SlideImage {
+                              width: calc(88vw + 3px);
+                              max-width: 950px;
+                              display: block;
+                              margin: auto;
+                              object-fit: cover;
+                              filter: grayscale(90%) brightness(70%);
+                              z-index: 1;
+                    }
+                    .SlideTitle {
+                              position: absolute;
+                              width: 80%;
+                              max-width: 870px;
+                              color: $white;
+                              z-index: 2;
+                              left: 7vw;
+                              margin-top: -25vw;
+                              .Featured {
+                                        font-weight: bold;
+                                        font-size: 2.7vw;
+                                        opacity: 0.7;
+                              }
+                              .Text {
+                                        font-family: $font1;
+                                        font-size: 7vw;
+                                        font-weight: bold;
+                              }
+                    }
+                    #prev {
+                              position: relative;
+                              left: 3vw;
+                              width: 22vw;
+                              background: linear-gradient(to right, $color2, 80%, $color1);
+                              bottom: -20px;
+                              padding: 5px 8px 8px 5px;
+                              cursor: pointer;
+                              font-size: 2.7vw;
+                              &:hover {
+                                        background: linear-gradient(to right, $color5, 90%, $color1);
+                              }
+                    }
+                    #next {
+                              position: relative;
+                              right: 3vw;
+                              width: 22vw;
+                              background: linear-gradient(to left, $color2, 80%, $color1);
+                              margin-top: 20px; 
+                              padding: 5px 5px 8px 8px;
+                              cursor: pointer;
+                              font-size: 2.7vw;
+                              text-align: right;
+                              &:hover {
+                                        background: linear-gradient(to left, $color5, 90%, $color1);
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #BlogPostsSlideShow {
+                    .SlideImage {
+                              height: 542.52px;
+                    }
+                    .SlideTitle {
+                              left: auto;
+                              margin-left: 60px;
+                              margin-top: -205.5px;
+                              .Featured {
+                                        font-size: 22.194px;
+                              }
+                              .Text {
+                                        font-size: 57.54px;
+                              }
+                    }
+                    #prev {
+                              left: 24.66px;
+                              width: 180.84px;
+                              font-size: 22.194px;
+                    }
+                    #next {
+                              right: 24.66px;
+                              width: 180.84px;
+                              font-size: 22.194px;
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          #BlogPostsSlideShow
+                    .Slide {
+                              width: 902px;
+                    }
+}

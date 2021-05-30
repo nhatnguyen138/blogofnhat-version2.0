@@ -1,0 +1,101 @@
+@import "modules-default";
+
+@media screen {
+          #AboutMeCover {
+                    #CoverImage {
+                              width: 100vw;
+                              height: 24vw;
+                              max-width: 1025px;
+                              object-fit: cover;
+                              margin: 20px 0 20px 0;
+                    }
+                    #Title {
+                              position: absolute;
+                              width: 50vw;
+                              font-family: $font3;
+                              font-size: 8vw;
+                              color: $color1;
+                              padding-top: 30px;
+                              padding-left: 30px;
+                    }
+          }
+          #AboutMeDescription {
+                    border-bottom: solid 3px $white;
+                    margin: 20px 20px 50px 20px;
+                    padding-bottom: 20px;
+                    #FirstLetter {
+                              font-weight: bold;
+                              font-size: 1.6rem;
+                              color: $color4;
+                    }
+          }
+          #AboutMeMySkills {
+                    margin: 20px;
+                    #Title {
+                              font-weight: bold;
+                              font-size: 2rem;
+                              color: $color4;
+                              margin-bottom: 10px;
+                    }
+                    #Description {
+                              margin-bottom: 20px;
+                    }
+                    #SkillLogos {
+                              display: grid;
+                              grid-template-columns: 1fr 1fr 1fr;
+                              grid-template-rows: repeat(auto);
+                              grid-row-gap: 10px;
+                              .Logos {
+                                        height: 65px;
+                              }
+                    }
+          }
+          #AboutMeMyProjects {
+                    margin: 20px;
+                    #Title {
+                              font-weight: bold;
+                              font-size: 2rem;
+                              color: $color4;
+                              margin-bottom: 10px;
+                    }
+                    a {
+                              color: $color4;
+                    }
+          }
+          #AboutMeContact {
+                    margin: 20px;
+                    #Title {
+                              font-weight: bold;
+                              font-size: 2rem;
+                              color: $color4;
+                              margin-bottom: 10px;
+                    }
+                    #Socials {
+                              display: flex;
+                              flex-direction: row;
+                              .SocialIcon {
+                                        width: 4rem;
+                                        height: 4rem;
+                                        margin-top: 15px;
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #AboutMeCover {
+                    #CoverImage {
+                              height: 200px;
+                    }
+                    #Title {
+                              font-size: 65.76px;
+                    }
+          }
+          #AboutMeMySkills {
+                    #SkillLogos {
+                              .Logos {
+                                        height: 100px;
+                              }
+                    }
+          }
+}

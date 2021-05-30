@@ -1,0 +1,135 @@
+@import "modules-default";
+@import "homepage-section-intro";
+
+@media screen {
+          #Cover {
+                    #CoverImage {
+                              width: 100vw;
+                              max-width: 1025px;
+                              object-fit: cover;
+                              margin: 20px 0 20px 0;
+                    }
+                    #CoverText {
+                              position: absolute;
+                              width: 50vw;
+                              padding: 15px 20px;
+                              #Title {
+                                        font-family: $font3;
+                                        font-size: 8vw;
+                                        color: $color1;
+                                        padding-top: 30px;
+                              }
+                              #Description {
+                                        font-family: $font2;
+                                        font-size: 3vw;
+                                        color: $black;
+                                        margin-top: -10px;
+                                        padding-left: 4vw;
+                              }
+                    }
+          }
+          #AboutMe {
+                    background-color: $color5;
+                    border-top: 3px solid $white;
+                    border-bottom: 3px solid $white;
+                    padding: 20px;
+                    #AboutMeAvatar {
+                              width: 20vw;
+                              display: block;
+                              margin: auto;
+                              border: 5px solid $color4;
+                              border-radius: 50%;
+                    }
+                    #AboutMeText {
+                              width: calc(100vw-20px);
+                              padding: 5px;
+                              #Title {
+                                        font-size: 6vw;
+                                        color: $color4;
+                                        margin-top: 0;
+                              }
+                              #Description {
+                                        font-size: 2.7vw;
+                                        color: $white;
+                                        margin-top: -20px;
+                              }
+                              #Button {
+                                        display: inline-block;
+                                        background-color: $black;
+                                        border-radius: 5px;
+                                        margin-top: 20px;
+                                        margin-left: 55vw;
+                                        padding: 10px;
+                                        font-family: $font1;
+                                        font-size: 2.7vw;
+                                        color: $color4;
+                                        a {
+                                                  text-decoration: none;      
+                                        }
+                                        &:hover {
+                                                  color: $white;
+                                                  transition: 0.4s;
+                                        }
+                                        &:not(hover) {
+                                                  color: $color4;
+                                                  transition: 0.4s;
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #Cover {
+                    #CoverImage {
+                              height: 437.933px;
+                    }
+                    #CoverText {
+                              width: 411px;
+                              padding: 1.8vw 2.4vw;
+                              #Title {
+                                        font-size: 65.76px;
+                              }
+                              #Description {
+                                        font-size: 24.66px;
+                                        padding-left: 32.88px;
+                              }
+                    }
+          }
+          #AboutMe {
+                    display: grid;
+                    grid-template-areas:
+                              "avatar text";
+                    #AboutMeAvatar {
+                              grid-area: avatar;
+                              width: 205.5px;
+                    }
+                    #AboutMeText {
+                              grid-area: text;
+                              width: 556.5px;
+                              margin-left: 20px;
+                              #Title {
+                                        font-size: 49.32px;
+                              }
+                              #Description {
+                                        font-size: 22.194px;
+                              }
+                              #Button {
+                                        font-size: 22.194px;
+                                        margin-left: 317.52px;
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          #Cover {
+                    #CoverText {
+                              padding: 18.45px 24.6px;
+                    }
+          }
+          #AboutMe {
+                    width: 1002px;
+                    margin-left: -8px;
+          }
+}

@@ -1,0 +1,22 @@
+@media only screen and (min-width: 822px) {
+          #Container {
+                    display: grid;
+                    grid-template-columns: 250px auto;
+                    grid-template-areas:
+                              "header nav"
+                              "main-content main-content"
+                              "footer footer";
+          }
+          header {
+                    grid-area: header;
+          }
+          nav {
+                    grid-area: nav;
+          }
+          main {
+                    grid-area: main-content;
+          }
+          footer {
+                    grid-area: footer;
+          }
+}

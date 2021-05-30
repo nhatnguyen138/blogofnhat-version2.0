@@ -1,0 +1,28 @@
+@import "layout-default";
+
+@media only screen and (min-width: 822px) {
+          #AboutMeContainer {
+                    display: grid;
+                    grid-template-columns: 3fr 2fr;
+                    grid-template-areas:
+                              "aboutme-cover aboutme-cover"
+                              "aboutme-text aboutme-text"
+                              "aboutme-skills contact"
+                              "aboutme-projects contact";
+          }
+          #AboutMeCover {
+                    grid-area: aboutme-cover;
+          }
+          #AboutMeDescription {
+                    grid-area: aboutme-text;
+          }
+          #AboutMeMySkills {
+                    grid-area: aboutme-skills;
+          }
+          #AboutMeMyProjects {
+                    grid-area: aboutme-projects;
+          }
+          #AboutMeContact {
+                    grid-area: contact;
+          }
+}

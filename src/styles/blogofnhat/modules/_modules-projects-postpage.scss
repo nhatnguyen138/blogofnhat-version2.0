@@ -1,0 +1,153 @@
+@media screen {
+          #ProjectsPosts {
+                    position: relative;
+                    margin-left: 30px;
+                    #Post {
+                              position: relative;
+                              margin: auto -30px 50px -42px;
+                              .ProjectImage {
+                                        width: calc(100vw - 100px);
+                                        object-fit: cover;
+                                        border: 3px solid $white;
+                                        border-radius: 5px;
+                                        margin: 15px 30px auto 70px;
+                              }
+                              .ProjectDetails {
+                                        background: linear-gradient(to bottom, $color1, 10%, $color2);
+                                        border-radius: 50px 0 50px 0;
+                                        margin: -110px 40px auto 50px;
+                                        padding-bottom: 50px;
+                                        .Title {
+                                                  font-weight: bold;
+                                                  font-size: 6vw;
+                                                  color: $color4;
+                                                  margin-left: 10px;
+                                                  margin-right: 20px;
+                                                  padding: 130px 0 20px 10px;
+                                        }
+                                        .Excerpt {
+                                                  font-family: $font4;
+                                                  font-size: 2.2vw;
+                                                  color: $color3;
+                                                  margin: -15px 20px 20px 20px;
+                                        }
+                                        .Content {
+                                                  font-family: $font1;
+                                                  font-size: 2.6vw;
+                                                  margin: 40px 20px 150px 20px;
+                                                  .inpost-image {
+                                                            width: 70%;
+                                                            height: auto;
+                                                            display: block;
+                                                            margin: auto;
+                                                  }
+                                                  .image-caption {
+                                                            font-family: $font4;
+                                                            font-style: italic;
+                                                            font-size: 2vw;
+                                                            color: $color3;
+                                                            margin: 10px 30px 50px 30px;
+                                                  }
+                                        }
+                                        .PrevNextPosts {
+                                                  margin-bottom: 120px;
+                                                  .SeePreviousPost {
+                                                            background-color: $color1;
+                                                            margin: 0 100px 20px 20px;
+                                                            padding: 20px;
+                                                            &:hover {
+                                                                      background-color: $color5;
+                                                                      transition: 0.25s;
+                                                            }
+                                                            &:not(:hover) {
+                                                                      background-color: $color1;
+                                                                      transition: 0.1s;
+                                                            }
+                                                  }
+                                                  .SeeNextPost {
+                                                            background-color: $color1;
+                                                            margin: 0 20px 20px 100px;
+                                                            padding: 20px;
+                                                            text-align: right;
+                                                            &:hover {
+                                                                      background-color: $color5;
+                                                                      transition: 0.25s;
+                                                            }
+                                                            &:not(:hover) {
+                                                                      background-color: $color1;
+                                                                      transition: 0.1s;
+                                                            }
+                                                  }
+                                                  .top-text {
+                                                            font-weight: bold;
+                                                            font-size: 2.7vw;
+                                                            margin-bottom: 5px;
+                                                  }
+                                                  .bottom-text {
+                                                            font-style: italic;
+                                                            font-size: 2.6vw;
+                                                  }
+                                                  a {
+                                                            text-decoration: none;
+                                                            color: $white;
+                                                  }   
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 822px) {
+          #ProjectsPosts {
+                    #Post {
+                              .ProjectImage {
+                                        width: calc(75vw - 100px);
+                              }
+                              .ProjectDetails {
+                                        .Title {
+                                                  font-size: 4.5vw;
+                                        }
+                                        .Excerpt {
+                                                  font-size: 14px;
+                                        }
+                                        .Content {
+                                                  font-size: 17.861px;
+                                                  .image-caption {
+                                                            font-size: 14px;
+                                                  }
+                                        }
+                                        .PrevNextPosts {
+                                                  .SeePreviousPost {
+                                                            width: 400px;
+                                                            margin: 0 100px 30px 20px;
+                                                  }
+                                                  .SeeNextPost {
+                                                            width: 400px;
+                                                            margin: 0 20px 30px auto;
+                                                  }
+                                                  .top-text {
+                                                            font-size: 18px;
+                                                  }
+                                                  .bottom-text {
+                                                            font-size: 16px;
+                                                  }                                          
+                                        }
+                              }
+                    }
+          }
+}
+
+@media only screen and (min-width: 1025px) {
+          #ProjectsPosts {
+                    #Post {
+                              .ProjectImage {
+                                        width: 668.75px;
+                              }
+                              .ProjectDetails {
+                                        .Title {
+                                                  font-size: 46.125px;
+                                        }
+                              }
+                    }
+          }
+}

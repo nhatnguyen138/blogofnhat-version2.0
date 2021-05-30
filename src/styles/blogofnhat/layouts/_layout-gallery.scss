@@ -1,0 +1,20 @@
+@import "layout-default";
+
+@media only screen and (min-width: 822px) {
+          #GalleryContainer {
+                    display: grid;
+                    grid-template-columns: 3fr 1fr;
+                    grid-template-areas:
+                              "section-title section-title"
+                              "gallery-posts widgets";
+          }
+          #SectionTitle {
+                    grid-area: section-title;
+          }
+          #GalleryPosts {
+                    grid-area: gallery-posts;
+          }
+          #Widgets {
+                    grid-area: widgets;
+          }
+}
